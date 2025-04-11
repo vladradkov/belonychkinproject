@@ -50,6 +50,7 @@ h1, h2 {
     padding: 10px;
     cursor: pointer;
     margin: 10px 0;
+    user-select: none;
 }
 
 .toggle-content {
@@ -80,6 +81,4 @@ footer p {
     background-color: #00376b;
 }
 
-.toggle-container.active .toggle-content {
-    display: block;
-}
+

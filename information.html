@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информация - Анализ IT Трендов</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Функция для раскрытия информации при клике
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -24,15 +35,15 @@
         <div class="content">
             <h2>Информация</h2>
             <div class="toggle-container">
-                <h3 class="toggle-title">IT-тренды</h3>
-                <div class="toggle-content">
-                    <p>Современные IT-тренды включают в себя развитие Web 3.0, цифровые валюты и искусственный интеллект, которые трансформируют наш мир.</p>
+                <h3 class="toggle-title" onclick="toggleContent('info1')">IT-тренды</h3>
+                <div id="info1" class="toggle-content">
+                    <p>IT-тренды включают в себя развитие Web 3.0, где акцент делается на децентрализацию и использование блокчейна для улучшения безопасности и конфиденциальности. Также важным трендом является использование искусственного интеллекта (ИИ) для обработки и анализа больших данных, что открывает новые возможности в бизнесе и науке.</p>
                 </div>
             </div>
             <div class="toggle-container">
-                <h3 class="toggle-title">Продуктивное использование нейросетей</h3>
-                <div class="toggle-content">
-                    <p>Продуктивное использование искусственного интеллекта может включать в себя создание персонализированных обучающих систем, автоматизацию процессов и многое другое.</p>
+                <h3 class="toggle-title" onclick="toggleContent('info2')">Продуктивное использование нейросетей</h3>
+                <div id="info2" class="toggle-content">
+                    <p>Продуктивное использование нейросетей включает в себя создание персонализированных обучающих систем, которые адаптируются под конкретного ученика, улучшая качество образования. Также нейросети активно используются для автоматизации процессов, таких как анализ данных и создание контента, что помогает сэкономить время и ресурсы в различных сферах.</p>
                 </div>
             </div>
         </div>
